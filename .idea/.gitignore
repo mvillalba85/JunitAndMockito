@@ -1,0 +1,64 @@
+############################
+# Maven
+############################
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+############################
+# IntelliJ IDEA
+############################
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+############################
+# Logs
+############################
+*.log
+logs/
+log/
+
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Spring Boot
+############################
+/build/
+application-local.properties
+application-dev.properties
+
+############################
+# Environment / secrets
+############################
+.env
+*.env
+
+############################
+# Tests / Coverage
+############################
+/jacoco/
+*.exec
+
+############################
+# JVM
+############################
+hs_err_pid*
+replay_pid*
+
+############################
+# Temporary files
+############################
+*.swp
+*.tmp
