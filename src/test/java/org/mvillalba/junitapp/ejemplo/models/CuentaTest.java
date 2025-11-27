@@ -1,5 +1,7 @@
 package org.mvillalba.junitapp.ejemplo.models;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mvillalba.junitapp.ejemplo.exceptions.DineroInsuficienteException;
 
@@ -10,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CuentaTest {
 
     @Test
+    @DisplayName("Test para el nombre del titular de la cuenta")
     void testTitular() {
         //Given
         Cuenta cuenta = new Cuenta();
@@ -24,6 +27,7 @@ class CuentaTest {
     }
 
     @Test
+    @DisplayName("Test para el saldo de la cuenta")
     void testSaldoCuenta() {
         //Given
         Cuenta cuenta = new Cuenta("Miguel", new BigDecimal("1000.12345"));
@@ -66,6 +70,7 @@ class CuentaTest {
     }
 
     @Test
+    @DisplayName("Test credito cuenta")
     void testCreditoCuenta() {
         //Given
         Cuenta cuenta = new Cuenta("Miguel", new BigDecimal("1000.12345"));
@@ -97,7 +102,10 @@ class CuentaTest {
     }
 
     @Test
+    @Disabled
+    @DisplayName("Test relacion entre Banco y Cuenta con Assert All")
     void testRelacionBancoCuenta() {
+        fail();
         Cuenta cuenta1 = new Cuenta("Miguel", new BigDecimal("2500"));
         Cuenta cuenta2 = new Cuenta("Mariano", new BigDecimal("1500.8989"));
 
