@@ -10,6 +10,8 @@ public class Cuenta {
     private String titular;
     private BigDecimal saldo;
 
+    private Banco banco;
+
     public Cuenta() {
     }
 
